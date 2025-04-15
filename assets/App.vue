@@ -151,7 +151,7 @@
           </button>
         </li>
         <li>
-        <a :href="`/raw/${focusedItem.key}`" target="_blank" download>
+      <button @click="handleDownloadAndDelete(focusedItem.key)" style="color: green">
             <span>下载</span>
           </a>
         </li>
