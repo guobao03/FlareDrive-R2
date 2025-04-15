@@ -1,0 +1,11 @@
+name = "download-once-worker"
+main = "src/index.js"
+compatibility_date = "2024-04-15"
+
+[[r2_buckets]]
+binding = "MY_BUCKET"
+bucket_name = "qiezi"
+
+routes = [
+  { pattern = "xhs.sucai.zone.id/api/download/*", zone_name = "sucai.zone.id" }
+]
