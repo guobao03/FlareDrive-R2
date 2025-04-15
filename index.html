@@ -54,3 +54,40 @@
     <script type="module"></script>
   </body>
 </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlareDrive R2 - Download and Delete</title>
+    <script>
+        function downloadAndDelete(fileKey) {
+            // 向 Cloudflare Worker 发送请求
+            fetch(`https://r2zdshanchu.jahiroamouzou.workers.dev/${fileKey}`)
+                .then(response => {
+                    if (response.ok) {
+                        return response.blob(); // 返回文件内容
+                    }
+                    throw new Error('File not found or error occurred!');
+                })
+                .then(blob => {
+                    // 创建一个下载链接
+                    const link = document.createElement('a');
+                    link.href = URL.createObjectURL(blob);
+                    link.download = fileKey;  // 设置文件名
+                    link.click();  // 自动点击链接，开始下载
+                })
+                .catch(error => {
+                    alert('Error: ' + error.message);  // 如果有错误，弹出错误提示
+                });
+        }
+    </script>
+</head>
+<body>
+    <h1>FlareDrive R2 - Download and Delete</h1>
+    <p>Click the button below to download and delete a file:</p>
+    
+    <!-- 按钮用于下载并删除文件 -->
+    <button onclick="downloadAndDelete('example.txt')">Download and Delete example.txt</button>
+</body>
+</html>
