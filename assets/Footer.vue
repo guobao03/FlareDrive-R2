@@ -20,10 +20,10 @@
     </div>
 
     <div class="project-links">
-      <strong>项目:</strong><a href="https://github.com/willow-god/FlareDrive-R2" target="_blank"
+      <strong>项目:</strong><a href="https://github.com/guobao03/FlareDrive-R2" target="_blank"
         rel="noopener noreferrer">FlareDrive-R2</a>
-      <strong>作者:</strong><a href="https://github.com/willow-god" target="_blank"
-        rel="noopener noreferrer">LiuShen</a>
+      <strong>作者:</strong><a href="https://t.me/qiezii"
+        rel="noopener noreferrer">@qiezii</a>
       <strong>初始项目:</strong><a href="https://github.com/ljxi/Cloudflare-R2-oss" target="_blank"
         rel="noopener noreferrer">Cloudflare-R2-OSS</a>
     </div>
