@@ -42,8 +42,8 @@ export default {
     return {
       homeUrl: "https://t.me/qiezii",
       blogUrl: "https://t.me/qiezii",
-      githubUrl: "https://t.me/qiezii",
-      emailUrl: "https://t.me/qiezii"
+      githubUrl: "https://github.com/guobao03",
+      emailUrl: "jahiroamouzou@gmail.com"
     };
   }
 };
